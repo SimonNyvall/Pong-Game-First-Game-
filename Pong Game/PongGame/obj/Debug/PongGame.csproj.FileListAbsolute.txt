@@ -1,0 +1,9 @@
+C:\Users\Simon\Desktop\PongGame\PongGame\bin\Debug\PongGame.exe.config
+C:\Users\Simon\Desktop\PongGame\PongGame\bin\Debug\PongGame.exe
+C:\Users\Simon\Desktop\PongGame\PongGame\bin\Debug\PongGame.pdb
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.csprojAssemblyReference.cache
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.Properties.Resources.resources
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.csproj.GenerateResource.cache
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.exe
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.pdb
+C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.Form1.resources
