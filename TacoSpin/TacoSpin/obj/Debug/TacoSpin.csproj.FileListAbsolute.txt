@@ -1,0 +1,9 @@
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\bin\Debug\TacoSpin.exe.config
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\bin\Debug\TacoSpin.exe
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\bin\Debug\TacoSpin.pdb
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.csprojAssemblyReference.cache
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.Properties.Resources.resources
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.csproj.GenerateResource.cache
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.exe
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.pdb
+C:\Users\Simon\source\repos\TacoSpin\TacoSpin\obj\Debug\TacoSpin.TacoSpin.resources
