@@ -12,24 +12,36 @@ namespace PongGame
 {   
     public partial class Form1 : Form
     {
+        #region variables
         private int _playerOne;
         private int _playerTwo;
+
         const int PlayerMovement = 2;
         const int ballSpeed = 4;
+
         bool ball_direction = true;
+
         int _playerOne_x = 50;
         int _playerTwo_x = 690;
+
         bool Ball_up_or_down = true;
+
         int playerlenth = 90, playerwith = 14;
         int scorePlayerOne = 0;
         int scoreplayerTwo = 0;
         int _scorePosition_x_Player2 = 440, _scorePosition_y_Players = 40, _scorePosition_x_Player1 = 300;
+
         const int numAway = -30;
+
         bool StopInvalidating = false;
 
         int ball_y = 100;
         int ball_x = 400;
-        enum positionPlayerOne
+
+        private positionPlayerOne _objPostionPlayerOne;
+        private positionPlayerTwo _objPostionPlayerTwo;
+
+         enum positionPlayerOne
         {
             up, down, stop
         }
@@ -37,8 +49,8 @@ namespace PongGame
         {
             up, down, stop
         }
-        private positionPlayerOne _objPostionPlayerOne;
-        private positionPlayerTwo _objPostionPlayerTwo;
+        #endregion variables
+
         public Form1()
         {
             InitializeComponent();
@@ -49,30 +61,22 @@ namespace PongGame
             _objPostionPlayerTwo = positionPlayerTwo.stop;
         }     
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-        
+        #region drawing objects
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            // The ball
+            // Drawing the ball
             e.Graphics.FillRectangle(Brushes.White, ball_x, ball_y, 15, 15);
             
-            // The players grephics
+            // The players graphics
             e.Graphics.FillRectangle(Brushes.White, _playerTwo_x, _playerTwo, playerwith, playerlenth);
             e.Graphics.FillRectangle(Brushes.White, _playerOne_x, _playerOne, playerwith, playerlenth);
-
-            // Draw ponits
-
-
-
         }
+        #endregion
 
+        #region Movement
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             // Key directions
-
             directions(e);
         }
 
@@ -94,11 +98,24 @@ namespace PongGame
                     break;
             }
         }
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            // Makes the players stop
+            if (e.KeyCode == Keys.W || e.KeyCode == Keys.S)
+            {
+                _objPostionPlayerOne = positionPlayerOne.stop;
+            }
+            if (e.KeyCode == Keys.O || e.KeyCode == Keys.L)
+            {
+                _objPostionPlayerTwo = positionPlayerTwo.stop;
+            }
+        }
+        #endregion
 
+        #region update loop
         private void timer1_Tick(object sender, EventArgs e)
         {         
             // Player movement and movement restrictions
-            
             if (_objPostionPlayerOne == positionPlayerOne.up)
             {
                 if (_playerOne >= PlayerMovement)
@@ -128,7 +145,6 @@ namespace PongGame
             }
 
             // ball movement
-
             // Ball direction in x axes and colision with players
             var ballUp = true;
             
@@ -148,7 +164,6 @@ namespace PongGame
                 }
             }
 
-
            if (ball_direction == true)
             {
                 ball_x += ballSpeed;
@@ -158,9 +173,7 @@ namespace PongGame
                 ball_x -= ballSpeed;
             }
 
-
-           // Ball direction in y axes
-
+            //Ball bounce
             if (ball_y == 0)
             {
                 Ball_up_or_down = false;
@@ -179,8 +192,7 @@ namespace PongGame
                 ball_y += ballSpeed;
             }
                        
-            // Point system
-
+            //Ball score ditermination.
             if (ball_x == 692)
             {
                 scorePlayerOne++;
@@ -194,11 +206,7 @@ namespace PongGame
                 ball_y = 100;
             }
 
-
-            // Player two's score
-
-            
-
+            #region update score
             switch (scoreplayerTwo)
             {
                 case 0:
@@ -451,64 +459,52 @@ namespace PongGame
 
             
             }
+            #endregion
 
             if (scorePlayerOne == 10)
             {
-                StopInvalidating = true;
+                scorePlayerOne = 0;
+                scoreplayerTwo = 0;
+
+                timer1.Stop();
+                
+                DialogResult dialogResult = MessageBox.Show("Player One Won! \n Rematch?","match", MessageBoxButtons.YesNo);
+                if(dialogResult == DialogResult.Yes)
+                {
+                    timer1.Start();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    this.Close();
+                }
+
+                pictureBox4.Location = new Point(_scorePosition_x_Player2, _scorePosition_y_Players);
+                pongplayer29.Location = new Point(numAway, numAway);
             }
             else if (scoreplayerTwo == 10)
             {
-                StopInvalidating = true;
+                scorePlayerOne = 0;
+                scoreplayerTwo = 0;
+                timer1.Stop();
+                
+                DialogResult dialogResult = MessageBox.Show("Player One Won! \n Rematch?", "match", MessageBoxButtons.YesNo);
+                if(dialogResult == DialogResult.Yes)
+                {
+                    timer1.Start();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    this.Close();
+                }
+
+                pictureBox4.Location = new Point(_scorePosition_x_Player2, _scorePosition_y_Players);
+                pongplayer29.Location = new Point(numAway, numAway);
             }
             if (StopInvalidating == false)
             {
                 Invalidate();
             }            
         }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pongplayer22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pongplayer23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            // Makes the players stop
-
-            if (e.KeyCode == Keys.W || e.KeyCode == Keys.S)
-            {
-                _objPostionPlayerOne = positionPlayerOne.stop;
-            }
-            if (e.KeyCode == Keys.O || e.KeyCode == Keys.L)
-            {
-                _objPostionPlayerTwo = positionPlayerTwo.stop;
-            }
-
-            /*
-            _objPostionPlayerOne = positionPlayerOne.stop;
-            _objPostionPlayerTwo = positionPlayerTwo.stop;
-            */
-        }
+        #endregion
     }
 }

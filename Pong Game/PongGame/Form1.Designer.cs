@@ -98,7 +98,6 @@
             this.pongplayer14.Size = new System.Drawing.Size(35, 43);
             this.pongplayer14.TabIndex = 1;
             this.pongplayer14.TabStop = false;
-            this.pongplayer14.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -108,7 +107,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(35, 43);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -118,7 +116,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(33, 42);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pongplayer22
             // 
@@ -129,7 +126,6 @@
             this.pongplayer22.Size = new System.Drawing.Size(68, 62);
             this.pongplayer22.TabIndex = 4;
             this.pongplayer22.TabStop = false;
-            this.pongplayer22.Click += new System.EventHandler(this.pongplayer22_Click);
             // 
             // pongplayer23
             // 
@@ -140,7 +136,6 @@
             this.pongplayer23.Size = new System.Drawing.Size(49, 50);
             this.pongplayer23.TabIndex = 5;
             this.pongplayer23.TabStop = false;
-            this.pongplayer23.Click += new System.EventHandler(this.pongplayer23_Click);
             // 
             // pongplayer24
             // 
@@ -315,7 +310,6 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Pong Game";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);

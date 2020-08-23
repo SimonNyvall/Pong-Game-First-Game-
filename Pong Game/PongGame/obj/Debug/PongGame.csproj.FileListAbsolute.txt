@@ -7,3 +7,13 @@ C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.csproj.GenerateResou
 C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.exe
 C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.pdb
 C:\Users\Simon\Desktop\PongGame\PongGame\obj\Debug\PongGame.Form1.resources
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.Form1.resources
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.Properties.Resources.resources
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.exe
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\obj\Debug\PongGame.pdb
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\bin\Debug\PongGame.exe.config
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\bin\Debug\PongGame.exe
+C:\Users\Admin\Desktop\test_pong_taco\Pong-Game-First-Game-\Pong Game\PongGame\bin\Debug\PongGame.pdb
